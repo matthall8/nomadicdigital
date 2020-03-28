@@ -7,6 +7,8 @@ export const StyledHeader = styled.header`
   background-size: cover;
   background-position: top;
   padding: 0;
+  margin: 0;
+  background-size: 375px 532px;
   ${'' /* @media only screen and (min-width: 600px) {
     background-image: url(https://user-images.githubusercontent.com/28222381/45878093-906cb980-bda8-11e8-9534-61322b3c14c7.png);
 } */}
@@ -19,6 +21,16 @@ export const LogoH1 = styled.h1`
   padding: 10px 0px 0px 0px;
   font-family: Roboto;
   font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+`;
+
+
+export const TaglineH2 = styled.h2`
+  color: #fff;
+  text-align: center;
+  padding: 60px 0px 0px 0px;
+  font-size: 48px;
   font-weight: bold;
   margin: 0;
 `;
