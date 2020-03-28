@@ -1,10 +1,16 @@
 import React from "react";
-// import {StyledHeader, Title, Tagline, Logo} from "./HomeHeader.style";
+import {ServicesSection, ServicesH2, Strategy, Seo, Javascript, Paid} from "./Services.style";
 // import logo from "../../../../assets/logoDarkBlue.svg";
 
 const Services = () => {
   return (
-    <h2>Services</h2>
+    <ServicesSection>
+    <ServicesH2>Services</ServicesH2>
+      <Strategy>Digital Strategy</Strategy>
+      <Seo>SEO</Seo>
+      <Javascript>Full Stack JavaScript</Javascript>
+      <Paid>Paid Search & Social</Paid>
+    </ServicesSection>
   );
 };
 
