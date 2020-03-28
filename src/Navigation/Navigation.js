@@ -1,14 +1,14 @@
 import React from "react";
-// import {StyledHeader, Title, Tagline, Logo} from "./HomeHeader.style";
+import {BurgerMenu, Line} from "./Navigation.style";
 // import logo from "../../../../assets/logoDarkBlue.svg";
 
 const Navigation = () => {
   return (
-    <nav>
-      <ul>
-        <li><a href="#">Example Link</a></li>
-      </ul>
-    </nav>
+    <BurgerMenu>
+      <Line />
+      <Line />
+      <Line />
+    </BurgerMenu>
   );
 };
 
