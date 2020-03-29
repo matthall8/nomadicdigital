@@ -1,13 +1,17 @@
 import styled from "styled-components";
 
-export const StyledHeader = styled.header`
-  height: 250px;
-  background-image: url(https://user-images.githubusercontent.com/28222381/45626954-72961080-ba99-11e8-9215-538504f985ea.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 250px;
-  background-position: bottom;
-  @media only screen and (min-width: 600px) {
-    background-image: url(https://user-images.githubusercontent.com/28222381/45878093-906cb980-bda8-11e8-9534-61322b3c14c7.png);
-}
+export const ExperienceSection = styled.section` 
+  text-align: center;
+  img {
+    margin: 50px auto 0px auto;
+    display: block;
+  }
+`;
+
+export const ExperienceH2 = styled.h2`
+  border-bottom: #D19C1D 4px solid;
+  font-size: 36px;
+  padding: 20px 0px;
+  width: 35%;
+  margin: 0 auto;
 `;
