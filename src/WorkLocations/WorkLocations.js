@@ -1,10 +1,13 @@
 import React from "react";
-// import {StyledHeader, Title, Tagline, Logo} from "./HomeHeader.style";
-// import logo from "../../../../assets/logoDarkBlue.svg";
+import {WorkLocationsSection, WorkLocationsH2} from "./WorkLocations.style";
+
 
 const WorkLocations = () => {
   return (
-    <h2>Where we've worked from</h2>
+    <WorkLocationsSection>
+      <WorkLocationsH2>Where we've worked from</WorkLocationsH2>
+      <img src="https://user-images.githubusercontent.com/9437789/77850286-4ba9b600-71c9-11ea-9356-98744bb468bf.png" alt="World Map" />
+    </WorkLocationsSection>
   );
 };
 
