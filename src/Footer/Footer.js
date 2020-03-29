@@ -1,14 +1,21 @@
 import React from "react";
-// import {StyledHeader, Title, Tagline, Logo} from "./HomeHeader.style";
+import {FooterNav, Copyright} from "./Footer.style";
 // import logo from "../../../../assets/logoDarkBlue.svg";
 
 const Footer = () => {
   return (
-    <nav>
+    <div>
+ <FooterNav>
       <ul>
-        <li><a href="#">Example Link</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
-    </nav>
+    </FooterNav>
+    <Copyright>
+    &copy; Nomadic Digital | Terms | Privacy
+    </Copyright>
+    </div>
   );
 };
 

@@ -1,13 +1,30 @@
 import styled from "styled-components";
 
-export const StyledHeader = styled.header`
-  height: 250px;
-  background-image: url(https://user-images.githubusercontent.com/28222381/45626954-72961080-ba99-11e8-9215-538504f985ea.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 250px;
-  background-position: bottom;
-  @media only screen and (min-width: 600px) {
-    background-image: url(https://user-images.githubusercontent.com/28222381/45878093-906cb980-bda8-11e8-9534-61322b3c14c7.png);
-}
+export const FooterNav = styled.nav`
+  ul {
+    clear:both;
+    background: url(https://user-images.githubusercontent.com/9437789/77851841-23bf5000-71d3-11ea-91a8-40fc869a9e91.png) no-repeat;
+    height: 44px;
+    margin: 0 auto;
+    text-align : center;
+    line-height: 44px;
+  }
+  li {
+    display:inline;
+  }
+  li a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+  }
+  li a:hover {
+    text-decoration: underline;
+  }
+`;
+
+export const Copyright = styled.p`
+  padding: 10px 0px;
+  font-size: 12px;
+  text-align: center;
 `;
