@@ -5,6 +5,7 @@ export const ContactSection = styled.section`
   label {
     display:none;
   }
+  margin: 0px 0px 20px 0px;
 `;
 
 export const ContactH2 = styled.h2`
