@@ -12,10 +12,10 @@ import {Helmet} from "react-helmet"
 function App() {
   return (
     <div>
-    <Helmet>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Nomadic Digital</title>
-    </Helmet>
+      <Helmet>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Nomadic Digital</title>
+      </Helmet>
       <StyledBody />
       <Header />
       <Services />

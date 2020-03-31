@@ -11,5 +11,6 @@ export const BurgerMenu = styled.div`
    position:absolute;
    top:0;
    right:0;
-   margin-right: 5px;
+   margin-right: 10px;
+   margin-top: 5px;
 `;
