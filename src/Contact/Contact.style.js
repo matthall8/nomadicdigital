@@ -12,6 +12,7 @@ export const ContactH2 = styled.h2`
   border-bottom: #D19C1D 4px solid;
   font-size: 36px;
   padding: 20px 0px;
+  width: fit-content;
   margin: 0 auto;
   text-align: center;
 `;
@@ -50,7 +51,7 @@ export const Submit = styled.button`
   text-align: center;
   font-size: 18px;
   color: #000;
-  width: 30%;
+  width: fit-content;
   font-weight: bold;
   background-image: linear-gradient(#D5A531, #D19C1D);
   border: #2A414A 2px solid;
