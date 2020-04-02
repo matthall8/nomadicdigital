@@ -8,15 +8,6 @@ export const ContactSection = styled.section`
   margin: 0px 0px 20px 0px;
 `;
 
-export const ContactH2 = styled.h2`
-  border-bottom: #D19C1D 4px solid;
-  font-size: 36px;
-  padding: 20px 0px;
-  width: fit-content;
-  margin: 0 auto;
-  text-align: center;
-`;
-
 export const LoginInput = styled.input`
   padding: 20px;
   display: block;

@@ -2,7 +2,10 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
   height: 532px;
-  background-image: url(https://user-images.githubusercontent.com/9437789/77623135-741a8180-6f37-11ea-86ab-f13a34adba9a.png);
+  background-image:  linear-gradient(
+    rgba(30, 40, 42, 0.4),
+    rgba(30, 40, 42, 0.4)
+    ), url(https://user-images.githubusercontent.com/9437789/77623135-741a8180-6f37-11ea-86ab-f13a34adba9a.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -18,9 +21,10 @@ export const LogoH1 = styled.h1`
   color: #fff;
   text-align: center;
   padding: 10px 0px 0px 0px;
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 700; 
+  font-size: 0.9rem;
   margin: 0;
 `;
 
@@ -28,8 +32,10 @@ export const LogoH1 = styled.h1`
 export const TaglineH2 = styled.h2`
   color: #fff;
   text-align: center;
-  padding: 60px 0px 0px 0px;
-  font-size: 48px;
-  font-weight: bold;
+  padding: 60px 40px 0px;
+  font-size: 2.2rem;
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
   margin: 0;
 `;
