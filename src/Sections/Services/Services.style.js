@@ -1,4 +1,8 @@
 import styled from "styled-components";
+import seoBg from "../../../client/images/seo.png";
+import strategyBg  from "../../../client/images/digital-strategy.png";
+import paidBg from "../../../client/images/paid-search-social.png";
+import javascriptBg from "../../../client/images/javascript.png";
 
 export const ServicesSection = styled.section`
   background: #1E282A;
@@ -18,7 +22,7 @@ export const ServicesSection = styled.section`
 `;
 
 export const Strategy = styled.section`
-  background-image: url(https://user-images.githubusercontent.com/9437789/77820907-bb427700-70dd-11ea-9e56-04e4f21c59ce.png);
+  background-image: url(${strategyBg});
   background-repeat: no-repeat;
   background-position: top;
   margin: 24px 0px 0px 0px;
@@ -28,7 +32,7 @@ export const Strategy = styled.section`
 `;
 
 export const Seo = styled.section`
-  background-image: url(https://user-images.githubusercontent.com/9437789/77820906-baa9e080-70dd-11ea-952a-8d41d96e534f.png);
+  background-image: url(${seoBg});
   background-repeat: no-repeat;
   background-position: top;
   margin: 24px 0px 0px 0px;
@@ -38,7 +42,7 @@ export const Seo = styled.section`
 `;
 
 export const Javascript = styled.section`
-  background-image: url(https://user-images.githubusercontent.com/9437789/77820905-ba114a00-70dd-11ea-91ac-a94ba50aa6ce.png);
+  background-image: url(${javascriptBg});
   background-repeat: no-repeat;
   background-position: top;
   margin: 24px 0px 0px 0px;
@@ -48,7 +52,7 @@ export const Javascript = styled.section`
 `;
 
 export const Paid = styled.section`
-  background-image: url(https://user-images.githubusercontent.com/9437789/77820904-b8e01d00-70dd-11ea-91a5-65293380542e.png);
+  background-image: url(${paidBg});
   background-repeat: no-repeat;
   background-position: top;
   margin: 24px 0px 0px 0px;
