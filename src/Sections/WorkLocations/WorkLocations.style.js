@@ -7,12 +7,5 @@ export const WorkLocationsSection = styled.section`
   font-weight: bold;
   color: #fff;
   text-align: center;
-`;
-
-export const WorkLocationsH2 = styled.h2`
-  border-bottom: #D19C1D 4px solid;
-  font-size: 36px;
-  padding: 20px 0px;
-  width: 70%;
-  margin: 0 auto;
+  padding-bottom: 48px;
 `;
