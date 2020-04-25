@@ -1,11 +1,12 @@
 import React from "react";
-import {ContactSection, ContactH2,LoginInput, Textarea, Submit} from "./Contact.style";
+import {ContactSection,LoginInput, Textarea, Submit} from "./Contact.style";
+import {StyledH2} from "../../Components/H2/H2.style"
 // import logo from "../../../../assets/logoDarkBlue.svg";
 
 class Contact extends React.Component {
   render() {
     return(<ContactSection>
-      <ContactH2>Contact</ContactH2>
+      <StyledH2>Contact</StyledH2>
       <label htmlFor="name">Name</label>
             <LoginInput
               component="input"

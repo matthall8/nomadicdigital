@@ -1,11 +1,12 @@
 import React from "react";
-import {ExperienceH2, ExperienceSection} from "./Experience.style";
+import {ExperienceSection} from "./Experience.style";
+import {StyledH2} from "../../Components/H2/H2.style"
 // import logo from "../../../../assets/logoDarkBlue.svg";
 
 const Experience = () => {
   return (
     <ExperienceSection>
-      <ExperienceH2>Experience</ExperienceH2>
+      <StyledH2>Experience</StyledH2>
       <img src="https://user-images.githubusercontent.com/9437789/77849906-fa98c280-71c6-11ea-8de0-891d637cd8da.png" alt="Michelin" />
       <img src="https://user-images.githubusercontent.com/9437789/77849907-fb315900-71c6-11ea-851e-57b3997953ac.png" alt="Aviva" />
       <img src="https://user-images.githubusercontent.com/9437789/77849908-fbc9ef80-71c6-11ea-9347-eb7a61f904b9.png" alt="Game of Thrones" />

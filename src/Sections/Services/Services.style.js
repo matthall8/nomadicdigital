@@ -3,19 +3,11 @@ import styled from "styled-components";
 export const ServicesSection = styled.section`
   background: #1E282A;
   margin: 0;
-  font-size: 20px;
+  font-size: 1.1rem;
   font-weight: bold;
   color: #fff;
   text-align: center;
   padding-bottom: 20px;
-`;
-
-export const ServicesH2 = styled.h2`
-  border-bottom: #D19C1D 4px solid;
-  font-size: 36px;
-  padding: 20px 0px;
-  width: fit-content;
-  margin: 0 auto;
 `;
 
 export const Strategy = styled.section`
