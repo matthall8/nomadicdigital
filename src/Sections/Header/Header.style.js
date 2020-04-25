@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import headerBackground from "../../../client/images/headerbg.png";
 
 export const StyledHeader = styled.header`
   height: 532px;
-  background-image:  linear-gradient(
+  background-image: linear-gradient(
     rgba(30, 40, 42, 0.5),
     rgba(30, 40, 42, 0.5)
-    ), url(https://user-images.githubusercontent.com/9437789/77623135-741a8180-6f37-11ea-86ab-f13a34adba9a.png);
+    ), url(${headerBackground});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
