@@ -7,10 +7,10 @@ const Services = () => {
   return (
     <ServicesSection>
     <StyledH2>Services</StyledH2>
-      <Strategy>Digital Strategy</Strategy>
-      <Seo>SEO</Seo>
-      <Javascript>Full Stack JavaScript</Javascript>
-      <Paid>Paid Search & Social</Paid>
+      <Strategy><a href="#">Digital Strategy</a></Strategy>
+      <Seo><a href="#">SEO</a></Seo>
+      <Javascript><a href="#">Full Stack JavaScript</a></Javascript>
+      <Paid><a href="#">Paid Search & Social</a></Paid>
     </ServicesSection>
   );
 };

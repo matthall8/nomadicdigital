@@ -5,13 +5,13 @@ export const ContactSection = styled.section`
   label {
     display:none;
   }
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 48px 0px;
 `;
 
 export const LoginInput = styled.input`
-  padding: 20px;
+  padding: 24px;
   display: block;
-  margin: 20px auto 0px auto;
+  margin: 32px auto 0px auto;
   width: 230px;
   text-align: center;
   font-size: 18px;
@@ -25,9 +25,9 @@ export const LoginInput = styled.input`
 `;
 
 export const Textarea = styled.textarea`
-  padding: 20px;
+  padding: 24px 20px 64px;
   display: block;
-  margin: 20px auto 0px auto;
+  margin: 32px auto 0px auto;
   width: 230px;
   text-align: center;
   font-size: 18px;
@@ -37,16 +37,15 @@ export const Textarea = styled.textarea`
 `;
 
 export const Submit = styled.button`
-  padding: 20px;
-  margin-top: 20px;
+  padding: 16px 32px;
+  margin-top: 24px;
   text-align: center;
   font-size: 18px;
-  color: #000;
+  color: #fff;
   width: fit-content;
   font-weight: bold;
   background-image: linear-gradient(#D5A531, #D19C1D);
-  border: #2A414A 2px solid;
+  border: #bf942c 2px solid;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px hsla(0,0%,0%,0.2);
 `;
-
-
-

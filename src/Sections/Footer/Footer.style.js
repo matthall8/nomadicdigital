@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterNav = styled.nav`
   ul {
-    background: url(https://user-images.githubusercontent.com/9437789/77851841-23bf5000-71d3-11ea-91a8-40fc869a9e91.png) no-repeat;
+    background: url(https://user-images.githubusercontent.com/9437789/77851841-23bf5000-71d3-11ea-91a8-40fc869a9e91.png) repeat-x;
     height: 44px;
     text-align : center;
     line-height: 44px;
@@ -15,7 +15,7 @@ export const FooterNav = styled.nav`
   li a {
     color: #fff;
     font-weight: bold;
-    margin-right: 5px;
+    margin: 0 12px;
     text-decoration: none;
   }
   li a:hover {
