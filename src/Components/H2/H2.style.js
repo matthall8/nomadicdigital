@@ -7,5 +7,5 @@ export const StyledH2 = styled.h2`
   width: fit-content;
   font-family: 'Muli', sans-serif;
   margin: 0 auto 32px;
-  width: 47%;
+  width: 56%;
 `;
