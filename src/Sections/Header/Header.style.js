@@ -25,7 +25,7 @@ export const LogoH1 = styled.h1`
   font-family: 'Muli', sans-serif;
   font-style: normal;
   font-weight: 700; 
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   margin: 0;
 `;
 
