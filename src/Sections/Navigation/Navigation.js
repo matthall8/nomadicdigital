@@ -1,14 +1,21 @@
-import React from "react";
-import {BurgerMenu, Line} from "./Navigation.style";
-// import logo from "../../../../assets/logoDarkBlue.svg";
+import React, {useState, useRef} from "react";
+import {BurgerMenu} from "./Navigation.style";
+import RightNav from '../RightNav/RightNav.js';
+import { useOnClickOutside } from '../../hooks';
 
 const Navigation = () => {
+const [open, setOpen] = useState(false)
+const node = useRef(); 
+useOnClickOutside(node, () => setOpen(false));
   return (
-    <BurgerMenu>
-      <Line />
-      <Line />
-      <Line />
-    </BurgerMenu>
+    <nav ref={node}>
+      <BurgerMenu open={open} onClick={() => setOpen(!open)}>
+        <div />
+        <div />
+        <div />
+      </BurgerMenu>
+      <RightNav open={open}/>
+    </nav>
   );
 };
 
