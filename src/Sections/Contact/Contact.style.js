@@ -21,7 +21,7 @@ export const LoginInput = styled.input`
   border-top: #fff 0px solid;
   border-left: #fff 0px solid;
   border-right: #fff 0px solid;
-  border-bottom: #2A414A 5px solid;
+  border-bottom: #2A414A 3px solid;
 `;
 
 export const Textarea = styled.textarea`
@@ -33,7 +33,7 @@ export const Textarea = styled.textarea`
   font-size: 18px;
   color: #000;
   background: #fff;
-  border: #2A414A 5px solid;
+  border: #2A414A 3px solid;
 `;
 
 export const Submit = styled.button`
