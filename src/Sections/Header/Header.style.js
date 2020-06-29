@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import headerBackground from "../../../client/images/headerbg.png";
+import desktopHeaderBackground from "../../../client/images/desktop_headerbg.png";
+
 
 export const StyledHeader = styled.header`
   height: 532px;
@@ -12,11 +14,10 @@ export const StyledHeader = styled.header`
   background-position: top;
   padding: 0;
   margin: 0;
-  ${'' /* @media only screen and (min-width: 600px) {
-    background-image: url(https://user-images.githubusercontent.com/28222381/45878093-906cb980-bda8-11e8-9534-61322b3c14c7.png);
-} */}
+  @media only screen and (min-width: 600px) {
+    background-image: url(${desktopHeaderBackground});
+}
 `;
-
 
 export const LogoH1 = styled.h1`
   color: #fff;
