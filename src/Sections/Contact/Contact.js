@@ -1,15 +1,13 @@
 import React, {Component, createRef} from "react";
-import {ContactSection,LoginInput,ThankYouMessage, Textarea, Submit} from "./Contact.style";
+import {ContactSection,ContactInput,ThankYouMessage, Textarea, Submit} from "./Contact.style";
 import {StyledH2} from "../../Components/H2/H2.style"
 import emailjs from 'emailjs-com';
-// import logo from "../../../../assets/logoDarkBlue.svg";
-
 class Contact extends Component {
   constructor(props) {
     super(props);
-    this.thankYouMessageRef = createRef();  
+    this.MessageRef = createRef(); 
+    this.FormRef = createRef();
   }
-  componentDidUpdate() {    document.title = `You clicked ${this.state.count} times`;  }
   state = {
       name: '',
       email: '',
@@ -30,10 +28,15 @@ class Contact extends Component {
     });   
    }
    showError() {
-    const thankYouMessageArea = this.thankYouMessageRef.current;
+    const MessageArea = this.MessageRef.current;
+    this.setState({
+      errorMessage: true,
+    })
+      MessageArea.scrollIntoView();
    }
    resetForm() {
       const MessageArea = this.MessageRef.current;
+      const FormArea = this.FormRef.current;
       this.setState({
         name: '',
         email: '',
@@ -41,6 +44,7 @@ class Contact extends Component {
         message: '',
         thankYouMessage: true,
       })
+        FormArea.reset()
         MessageArea.scrollIntoView();
     }
     handleChange = (param, e) => {
@@ -51,9 +55,9 @@ class Contact extends Component {
     <div>
       <ContactSection>
           <StyledH2>Contact</StyledH2>
-          <form onSubmit={this.handleSubmit.bind(this)}>
+          <form onSubmit={this.handleSubmit.bind(this)} ref={this.FormRef}>
             <label htmlFor="name">Name</label>
-                  <LoginInput
+                  <ContactInput
                     component="input"
                     placeholder="Your Name"
                     type="text"
@@ -64,7 +68,7 @@ class Contact extends Component {
                     onChange={this.handleChange.bind(this, 'name')}
                   />
                       <label htmlFor="email">Email</label>
-                  <LoginInput
+                  <ContactInput
                     component="input"
                     placeholder="Your Email"
                     type="email"
@@ -75,7 +79,7 @@ class Contact extends Component {
                     onChange={this.handleChange.bind(this, 'email')}
                   />
                 <label htmlFor="number">Phone number</label>
-                  <LoginInput
+                  <ContactInput
                     component="input"
                     placeholder="Your Number"
                     type="phonenumber"

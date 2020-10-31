@@ -8,7 +8,7 @@ export const ContactSection = styled.section`
   margin: 0px 0px 48px 0px;
 `;
 
-export const LoginInput = styled.input`
+export const ContactInput = styled.input`
   padding: 24px;
   display: block;
   margin: 32px auto 0px auto;
