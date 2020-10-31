@@ -13,8 +13,8 @@ export const LoginInput = styled.input`
   display: block;
   margin: 32px auto 0px auto;
   width: 230px;
+  font-size: 1.125rem;
   text-align: center;
-  font-size: 18px;
   color: #000;
   font-weight: bold;
   background: #fff;
@@ -24,13 +24,43 @@ export const LoginInput = styled.input`
   border-bottom: #2A414A 3px solid;
 `;
 
+export const ErrorMessage = styled.section`
+    padding: 24px;
+    display: block;
+    font-weight: bold;
+    border: #DD614A 2px solid;
+    background: #fff;
+    font-family: Open Sans;
+    font-size: 1.0rem;
+    line-height: 1.6;
+    margin: 32px auto 0px auto;
+    width: 230px;
+    text-align: center;
+`;
+
+export const ThankYouMessage = styled.section`
+    padding: 24px;
+    display: block;
+    font-weight: bold;
+    border: #069E2D 2px solid;
+    background: #fff;
+    font-family: Open Sans;
+    font-size: 1.0rem;
+    line-height: 1.6;
+    margin: 32px auto 0px auto;
+    width: 230px;
+    text-align: center;
+`;
+
 export const Textarea = styled.textarea`
   padding: 24px 20px 64px;
   display: block;
   margin: 32px auto 0px auto;
   width: 230px;
+  font-family: Open Sans;
+  font-weight: bold;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #000;
   background: #fff;
   border: #2A414A 3px solid;
