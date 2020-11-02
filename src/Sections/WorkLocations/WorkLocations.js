@@ -25,7 +25,7 @@ class WorkLocations extends Component {
     return (
       <WorkLocationsSection>
         <StyledH2>Where we've worked from</StyledH2>
-        <MapContainer center={[51.505, -0.09]} zoom={1} scrollWheelZoom={false}>
+        <MapContainer center={[51.505, -0.09]} zoom={1} zoomControl={false} scrollWheelZoom={false}>
           <GeoJSON data={mapData.features} style={this.countryStyle} onEachFeature={this.onEachCountry} />
         </MapContainer>
       </WorkLocationsSection>

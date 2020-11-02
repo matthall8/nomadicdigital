@@ -7,8 +7,4 @@ export const WorkLocationsSection = styled.section`
   font-weight: bold;
   color: #fff;
   text-align: center;
-  padding-bottom: 48px;
-  img {
-    margin-top: 36px;
-  }
 `;
