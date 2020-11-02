@@ -22,6 +22,9 @@ export const ContactInput = styled.input`
   border-left: #fff 0px solid;
   border-right: #fff 0px solid;
   border-bottom: #2A414A 3px solid;
+  @media only screen and (min-width: 600px) {
+      width: 50vw; 
+    }
 `;
 
 export const ErrorMessage = styled.section`
@@ -36,6 +39,9 @@ export const ErrorMessage = styled.section`
     margin: 32px auto 0px auto;
     width: 230px;
     text-align: center;
+    @media only screen and (min-width: 600px) {
+      width: 50vw; 
+    }
 `;
 
 export const ThankYouMessage = styled.section`
@@ -50,6 +56,9 @@ export const ThankYouMessage = styled.section`
     margin: 32px auto 0px auto;
     width: 230px;
     text-align: center;
+    @media only screen and (min-width: 600px) {
+      width: 50vw; 
+    }
 `;
 
 export const Textarea = styled.textarea`
@@ -64,6 +73,10 @@ export const Textarea = styled.textarea`
   color: #000;
   background: #fff;
   border: #2A414A 3px solid;
+  @media only screen and (min-width: 600px) {
+      width: 50vw; 
+      margin: 48px auto 0px auto;
+    }
 `;
 
 export const Submit = styled.button`
@@ -78,4 +91,8 @@ export const Submit = styled.button`
   border: #bf942c 2px solid;
   border-radius: 10px;
   box-shadow: 0 4px 6px hsla(0,0%,0%,0.2);
+  @media only screen and (min-width: 600px) {
+      width: 15vw; 
+      margin-top: 32px;
+    }
 `;

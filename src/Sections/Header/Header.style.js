@@ -15,8 +15,9 @@ export const StyledHeader = styled.header`
   padding: 0;
   margin: 0;
   @media only screen and (min-width: 600px) {
-    background-image: url(${desktopHeaderBackground});
-}
+    background-image: url(${headerBackground});
+    background-size: auto;
+  }
 `;
 
 export const LogoH1 = styled.h1`
