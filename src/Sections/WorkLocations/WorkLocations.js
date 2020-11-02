@@ -32,6 +32,5 @@ class WorkLocations extends Component {
     );
   };
   }
-
-
+  
 export default WorkLocations;

@@ -21,12 +21,9 @@ class Contact extends Component {
     e.preventDefault()
     console.log(e.target)    
     emailjs.sendForm('gmail', 'template_gVJmXjPM', e.target, 'user_npJtGEM0TmFQNmO4403KI')
-       .then((result) => {
-        console.log(e.target)
-        console.log(result.text);
+       .then(() => {
         this.resetForm()
-    }, (error) => {
-        console.log(error.text);
+    }, () => {
         this.showError()
     });   
    }
