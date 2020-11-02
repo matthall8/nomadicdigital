@@ -7,11 +7,11 @@ import Contact from "./Sections/Contact/Contact"
 import Footer from "./Sections/Footer/Footer"
 import StyledBody from "./Sections/Body/Body"
 import {Helmet} from "react-helmet"
-
+import Theme from "./Theme.js"
 
 function App() {
   return (
-    <div>
+    <Theme>
       <Helmet>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Nomadic Digital</title>
@@ -25,7 +25,7 @@ function App() {
       <WorkLocations />
       <Contact />
       <Footer />
-    </div>
+    </Theme>
   );
 }
 

@@ -10,8 +10,8 @@ export const ServicesSection = styled.section`
   font-size: 1.1rem;
   font-weight: bold;
   color: #fff;
-  text-align: center;
   padding-bottom: 48px;
+  text-align: center;
   a {
     color:white;
     text-decoration: none;
@@ -22,42 +22,37 @@ export const ServicesSection = styled.section`
 `;
 
 export const Strategy = styled.section`
-  background-image: url(${strategyBg});
-  background-repeat: no-repeat;
-  background-position: top;
-  margin: 24px 0px 0px 0px;
-  line-height: 100px;
-  padding: 0;
-  height: 100px;  
+  background-image: url(${strategyBg});  
 `;
 
 export const Seo = styled.section`
   background-image: url(${seoBg});
-  background-repeat: no-repeat;
-  background-position: top;
-  margin: 24px 0px 0px 0px;
-  padding: 0;
-  line-height: 100px;
-  height: 100px;  
 `;
 
 export const Javascript = styled.section`
-  background-image: url(${javascriptBg});
-  background-repeat: no-repeat;
-  background-position: top;
-  margin: 24px 0px 0px 0px;
-  padding: 0;
-  line-height: 100px;
-  height: 100px;  
+  background-image: url(${javascriptBg}); 
 `;
 
 export const Paid = styled.section`
   background-image: url(${paidBg});
-  background-repeat: no-repeat;
-  background-position: top;
-  margin: 24px 0px 0px 0px;
-  padding: 0;
-  line-height: 100px;
-  height: 100px;  
 `;
 
+export const ServiceBoxes = styled.section`
+    margin: 0 auto;
+    display:flex;
+    flex-flow: wrap;
+    width: ${props => props.theme.width.mobilepWidth};
+    justify-content: space-between;
+    section {
+      background-repeat: no-repeat;
+      background-position: top;
+      margin: 24px auto 0;
+      line-height: 100px;
+      padding: 0;
+      height: 100px;
+      width: 375px;
+    }
+   @media only screen and (min-width: 600px) {
+    width: ${props => props.theme.width.desktopWidth};
+   }
+`;

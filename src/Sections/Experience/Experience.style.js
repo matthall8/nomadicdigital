@@ -8,3 +8,24 @@ export const ExperienceSection = styled.section`
     display: block;
   }
 `;
+
+export const ExperienceLogos = styled.section`
+      display: flex;
+      flex-flow: row wrap;
+      align-items:center;
+      margin: 32px auto 0;
+      width: ${props => props.theme.width.mobileWidth};
+      @media only screen and (min-width: 600px) {
+        width: ${props => props.theme.width.desktopWidth};
+      }
+      img {
+        margin:  34px 0px;
+      }
+`;
+
+export const Logo = styled.section`
+    flex: 1;
+    display:flex;
+    justify-content: space-evenly;
+    flex-basis: calc(33% - 20px)
+`
