@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import headerBackground from "../../../client/images/headerbg.png";
-import desktopHeaderBackground from "../../../client/images/desktop_headerbg.png";
+import desktopHeaderBackground from "../../../client/images/desktop_headerbg.jpg";
 
 
 export const StyledHeader = styled.header`
@@ -11,12 +11,15 @@ export const StyledHeader = styled.header`
     ), url(${headerBackground});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   padding: 0;
   margin: 0;
   @media only screen and (min-width: 600px) {
-    background-image: url(${headerBackground});
-    background-size: auto;
+    background-image: linear-gradient(
+    rgba(30, 40, 42, 0.7),
+    rgba(30, 40, 42, 0.7)), url(${desktopHeaderBackground});
+    background-size: cover;
+    height: 100vh;
   }
 `;
 
@@ -29,6 +32,9 @@ export const LogoH1 = styled.h1`
   font-weight: 700; 
   font-size: 1.05rem;
   margin: 0;
+  @media only screen and (min-width: 600px) {
+    padding: 32px 0px;
+  }
 `;
 
 
@@ -40,5 +46,42 @@ export const TaglineH2 = styled.h2`
   font-family: 'Muli', sans-serif;
   font-style: normal;
   font-weight: 600;
-  margin: 0;
+  @media only screen and (min-width: 600px) {
+    margin: 0 auto;
+    width: 50vw;
+    padding: 20vh 0 0 0;
+  }
 `;
+
+export const NavigationArea = styled.section`
+  @media only screen and (min-width: 600px) {
+    margin: 0 auto;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+  }
+`
+
+export const ContactCTA = styled.a`
+  display: block;
+  margin: 24px auto 0;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin-top: 24px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  width: fit-content;
+  font-weight: bold;
+  background-image: linear-gradient(#D5A531, #D19C1D);
+  border: #bf942c 2px solid;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px hsla(0,0%,0%,0.2);
+  @media only screen and (min-width: 600px) {
+      width: 10vw; 
+      margin 15vh auto;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+`

@@ -4,7 +4,7 @@ import {StyledH2} from "../../Components/H2/H2.style"
 
 const Services = () => {
   return (
-    <ServicesSection>
+    <ServicesSection id="services">
       <StyledH2>Services</StyledH2>
       <ServiceBoxes>
         <Strategy><a href="#">Digital Strategy</a></Strategy>

@@ -21,22 +21,6 @@ export const ServicesSection = styled.section`
   }
 `;
 
-export const Strategy = styled.section`
-  background-image: url(${strategyBg});  
-`;
-
-export const Seo = styled.section`
-  background-image: url(${seoBg});
-`;
-
-export const Javascript = styled.section`
-  background-image: url(${javascriptBg}); 
-`;
-
-export const Paid = styled.section`
-  background-image: url(${paidBg});
-`;
-
 export const ServiceBoxes = styled.section`
     margin: 0 auto;
     display:flex;
@@ -54,5 +38,25 @@ export const ServiceBoxes = styled.section`
     }
    @media only screen and (min-width: 600px) {
     width: ${props => props.theme.width.desktopWidth};
+    section {
+      margin: 32px 0;
+    }
    }
 `;
+
+export const Strategy = styled.section`
+  background-image: url(${strategyBg});  
+`;
+
+export const Seo = styled.section`
+  background-image: url(${seoBg});
+`;
+
+export const Javascript = styled.section`
+  background-image: url(${javascriptBg}); 
+`;
+
+export const Paid = styled.section`
+  background-image: url(${paidBg});
+`;
+

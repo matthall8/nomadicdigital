@@ -4,6 +4,9 @@ export const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+  a {
+    color:#fff;
+  }
   li {
     padding: 18px 10px;
   }
@@ -19,6 +22,9 @@ export const Ul = styled.ul`
     width: 100%;
     padding: 0rem 0 0 0;
     color: #1E282A;
+    a {
+      color: #1E282A;
+    }
     transition: transform 0.3s ease-in-out;
     li {
       font-weight: bold;
@@ -26,3 +32,11 @@ export const Ul = styled.ul`
     }
   }
 `;  
+
+export const ContactLi = styled.li`
+  @media only screen and (min-width: 600px) {
+      padding: 14px 0px 14px 10px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+  }
+`

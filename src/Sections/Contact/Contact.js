@@ -1,5 +1,5 @@
 import React, {Component, createRef} from "react";
-import {ContactSection,ContactInput,ThankYouMessage, Textarea, Submit} from "./Contact.style";
+import {ContactSection,ContactLeft, ContactRight, ContactInput,ThankYouMessage, Textarea, Submit} from "./Contact.style";
 import {StyledH2} from "../../Components/H2/H2.style"
 import emailjs from 'emailjs-com';
 class Contact extends Component {
@@ -53,10 +53,11 @@ class Contact extends Component {
     render() {
     return(
     <div>
-      <ContactSection>
+      <ContactSection id="contact">
           <StyledH2>Contact</StyledH2>
           <form onSubmit={this.handleSubmit.bind(this)} ref={this.FormRef}>
             <label htmlFor="name">Name</label>
+              <ContactLeft>
                   <ContactInput
                     component="input"
                     placeholder="Your Name"
@@ -89,20 +90,23 @@ class Contact extends Component {
                     value={this.state.phoneNumber}
                     onChange={this.handleChange.bind(this, 'phoneNumber')}
                   />
-                  <Textarea 
-                    placeholder="Tell us a little bit about your project"
-                    value={this.state.message}
-                    name="message"
-                    onChange={this.handleChange.bind(this, 'message')}
-                    required
-                  >
-                  </Textarea>
-                  <Submit>Say Hello!</Submit>
-                  <section ref={this.MessageRef}>
-                    {this.state.errorMessage && <ErrorMessage>Unfortunately there has been an error submitting your message. Please try again!</ErrorMessage>}
-                    {this.state.thankYouMessage && <ThankYouMessage>Thank you for your message. We will be in touch shortly!</ThankYouMessage>}
-                  </section>
+                  </ContactLeft>
+                  <ContactRight>
+                    <Textarea 
+                      placeholder="Tell us a little bit about your project"
+                      value={this.state.message}
+                      name="message"
+                      onChange={this.handleChange.bind(this, 'message')}
+                      required
+                    >
+                    </Textarea>
+                    <Submit>Say Hello!</Submit>
+                  </ContactRight>
                 </form>
+                <section ref={this.MessageRef}>
+                      {this.state.errorMessage && <ErrorMessage>Unfortunately there has been an error submitting your message. Please try again!</ErrorMessage>}
+                      {this.state.thankYouMessage && <ThankYouMessage>Thank you for your message. We will be in touch shortly!</ThankYouMessage>}
+                </section>
       </ContactSection>
     </div>)
   };

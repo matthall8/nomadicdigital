@@ -23,7 +23,7 @@ class WorkLocations extends Component {
   }
   render() {
     return (
-      <WorkLocationsSection>
+      <WorkLocationsSection id="locations">
         <StyledH2>Where we've worked from</StyledH2>
         <MapContainer center={[51.505, -0.09]} zoom={1} zoomControl={false} scrollWheelZoom={false}>
           <GeoJSON data={mapData.features} style={this.countryStyle} onEachFeature={this.onEachCountry} />
