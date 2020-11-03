@@ -8,6 +8,7 @@ export const StyledH2 = styled.h2`
   margin: 0 auto 32px;
   width: ${props => props.theme.width.mobileWidth};
   @media only screen and (min-width: 600px) {
+    padding: 32px 0px;
     width: ${props => props.theme.width.desktopWidth};
   }
 `;

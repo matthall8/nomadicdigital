@@ -1,14 +1,14 @@
 import React from 'react';
-import {Ul} from "./RightNav.styled";
+import {Ul, ContactLi} from "./RightNav.styled";
 
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li>Home</li>
-      <li>About Us</li>
-      <li>Contact Us</li>
-      <li>Sign In</li>
-      <li>Sign Up</li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#locations">Work Locations</a></li>
+      <ContactLi><a href="#contact">Contact Us</a></ContactLi>
     </Ul>
   )
 }

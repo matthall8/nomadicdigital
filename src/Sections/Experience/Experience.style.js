@@ -2,11 +2,6 @@ import styled from "styled-components";
 
 export const ExperienceSection = styled.section` 
   text-align: center;
-  margin: 0px 0px 0px 0px;
-  img {
-    margin: 0px auto 48px auto;
-    display: block;
-  }
 `;
 
 export const ExperienceLogos = styled.section`
@@ -15,17 +10,23 @@ export const ExperienceLogos = styled.section`
       align-items:center;
       margin: 32px auto 0;
       width: ${props => props.theme.width.mobileWidth};
-      @media only screen and (min-width: 600px) {
-        width: ${props => props.theme.width.desktopWidth};
-      }
       img {
-        margin:  34px 0px;
+        margin:  32px 0px;
+      }
+
+        width: ${props => props.theme.width.desktopWidth};
+        margin: 32px auto;
+        img {
+        margin:  48px 0px;
+      }
       }
 `;
 
 export const Logo = styled.section`
-    flex: 1;
+    flex: 0 0 100%;
     display:flex;
-    justify-content: space-evenly;
-    flex-basis: calc(33% - 20px)
+    justify-content: center;
+    @media only screen and (min-width: 600px) {
+      flex: 0 0 32%;
+    }
 `
