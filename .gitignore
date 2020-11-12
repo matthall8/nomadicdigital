@@ -60,3 +60,5 @@ typings/
 # Mac OSC
 
 .DS_Store
+# Local Netlify folder
+.netlify
