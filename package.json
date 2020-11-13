@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
-    "build": "webpack -p"
+    "build": "webpack --config webpack.prod.js"
   },
   "author": "",
   "license": "ISC",
@@ -28,7 +28,8 @@
     "terser-webpack-plugin": "^2.3.5",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.4.0"
   },
   "dependencies": {
     "emailjs-com": "^2.4.1",
@@ -37,6 +38,7 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
     "react-leaflet": "^3.0.0",
-    "styled-components": "^5.1.0"
+    "styled-components": "^5.1.0",
+    "webpack-bundle-analyzer": "^4.1.0"
   }
 }
