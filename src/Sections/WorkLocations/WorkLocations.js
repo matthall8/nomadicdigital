@@ -20,7 +20,7 @@ class WorkLocations extends Component {
     layer.bindPopup(countryName)
   }
   render() {
-    console.log(JSON.stringify(mapData))
+    console.log(mapData)
     return (
       <WorkLocationsSection id="locations">
         <StyledH2>Where we've worked from</StyledH2>
