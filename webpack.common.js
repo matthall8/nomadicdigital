@@ -2,11 +2,34 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const JsonMinimizerPlugin = require("json-minimizer-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
+const path = require('path');
 
 module.exports = {
+  entry: {
+    app: './src/index.js',
+
+  },
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
   module: {
     rules: [
-      {
+        {
+          test: /\.json/i,
+          type: "javascript/auto",
+          use: [
+            {
+              loader: "file-loader",
+              options: {
+                name: "[name].[ext]",
+              },
+            },
+          ],
+        },
+        {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
         use: 'babel-loader',
@@ -46,16 +69,24 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new CopyPlugin({
+      patterns: [
+        {
+          context: path.resolve(__dirname),
+          from: "./src/data/countries.json",
+        },
+      ],
+    }),
+  new BundleAnalyzerPlugin(),
+  new CleanWebpackPlugin(),
+  new HtmlWebpackPlugin({
+    title: 'Production',
+    template: './src/index.html'
+  }),
+],
   optimization: {
     minimize: true,
-    minimizer: [new TerserPlugin()],
+    minimizer: [new TerserPlugin(),new JsonMinimizerPlugin()],
   },
-  plugins: [
-    new BundleAnalyzerPlugin(),
-    new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      title: 'Production',
-      template: './src/index.html'
-    }),
-  ],
   };

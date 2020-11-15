@@ -5,8 +5,6 @@ import "./WorkLocations.css"
 import mapData from "../../data/countries.json"
 import {WorkLocationsSection} from "./WorkLocations.style";
 import {StyledH2} from "../../Components/H2/H2.style"
-import { gridLayer } from "leaflet";
-
 class WorkLocations extends Component {
   countryStyle = {
     fillColor: "#000",
@@ -22,6 +20,7 @@ class WorkLocations extends Component {
     layer.bindPopup(countryName)
   }
   render() {
+    console.log(JSON.stringify(mapData))
     return (
       <WorkLocationsSection id="locations">
         <StyledH2>Where we've worked from</StyledH2>
