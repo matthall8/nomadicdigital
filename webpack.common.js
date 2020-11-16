@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const JsonMinimizerPlugin = require("json-minimizer-webpack-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
 const path = require('path');
 
 module.exports = {
@@ -78,6 +77,6 @@ module.exports = {
 ],
   optimization: {
     minimize: true,
-    minimizer: [new TerserPlugin(),new JsonMinimizerPlugin()],
+    minimizer: [new TerserPlugin()],
   },
   };
