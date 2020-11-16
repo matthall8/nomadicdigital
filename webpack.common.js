@@ -9,7 +9,6 @@ const path = require('path');
 module.exports = {
   entry: {
     app: './src/index.js',
-
   },
   output: {
     filename: '[name].bundle.js',
@@ -70,14 +69,6 @@ module.exports = {
     ],
   },
   plugins: [
-    new CopyPlugin({
-      patterns: [
-        {
-          context: path.resolve(__dirname),
-          from: "./src/data/countries.json",
-        },
-      ],
-    }),
   new BundleAnalyzerPlugin(),
   new CleanWebpackPlugin(),
   new HtmlWebpackPlugin({
