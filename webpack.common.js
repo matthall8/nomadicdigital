@@ -68,7 +68,9 @@ module.exports = {
     ],
   },
   plugins: [
-  new BundleAnalyzerPlugin(),
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'disabled',
+    }),
   new CleanWebpackPlugin(),
   new HtmlWebpackPlugin({
     title: 'Production',
