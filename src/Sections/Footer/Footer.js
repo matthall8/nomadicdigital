@@ -6,13 +6,15 @@ const Footer = () => {
     <div>
  <FooterNav>
       <ul>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#top">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#locations">Work Locations</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
     </FooterNav>
     <Copyright>
-    &copy; Nomadic Digital | Terms | Privacy
+      &copy; Nomadic Digital 2016 - 2020
     </Copyright>
     </div>
   );

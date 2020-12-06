@@ -14,7 +14,6 @@ function App() {
     <Theme>
       <Helmet>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Nomadic Digital</title>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Muli:wght@500;700;800;900&display=swap" rel="stylesheet" /> 
       </Helmet>
