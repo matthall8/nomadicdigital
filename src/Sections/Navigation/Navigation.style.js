@@ -31,7 +31,7 @@ export const BurgerMenu = styled.div`
     &:nth-child(3) {
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
     }
-}
+  }
 `;
 
 export const Ul = styled.ul`
