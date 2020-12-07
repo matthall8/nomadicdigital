@@ -13,7 +13,7 @@ export const ExperienceLogos = styled.section`
       img {
         margin:  32px 0px;
       }
-
+      @media only screen and (min-width: 600px) {
         width: ${props => props.theme.width.desktopWidth};
         margin: 32px auto;
         img {
