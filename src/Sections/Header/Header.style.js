@@ -56,9 +56,11 @@ export const TaglineH2 = styled.h2`
 export const NavigationArea = styled.section`
   @media only screen and (min-width: 600px) {
     margin: 0 auto;
+    padding: 10px 0 0 0;
     width: 60vw;
     display: flex;
     justify-content: space-between;
+    align-items:baseline;
   }
 `
 

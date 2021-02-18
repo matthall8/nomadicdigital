@@ -42,7 +42,7 @@ export const Ul = styled.ul`
     color:#fff;
   }
   li {
-    padding: 18px 10px;
+    padding: 8px 12px;
   }
   @media (max-width: 768px) {
     font-family: 'Muli', sans-serif;
@@ -69,8 +69,8 @@ export const Ul = styled.ul`
 
 export const ContactLi = styled.li`
   @media only screen and (min-width: 600px) {
-      padding: 14px 0px 14px 10px;
       border: 2px solid #fff;
       border-radius: 10px;
+      margin-left:12px;
   }
 `
