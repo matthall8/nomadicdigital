@@ -14,7 +14,7 @@ const Footer = () => {
       </ul>
     </FooterNav>
     <Copyright>
-      &copy; Nomadic Digital 2016 - 2020
+      &copy; Nomadic Digital 2016 - 2021
     </Copyright>
     </div>
   );

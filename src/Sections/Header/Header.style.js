@@ -33,7 +33,7 @@ export const LogoH1 = styled.h1`
   font-size: 1.05rem;
   margin: 0;
   @media only screen and (min-width: 600px) {
-    padding: 32px 0px;
+    padding: 24px 0px;
   }
 `;
 
@@ -60,7 +60,7 @@ export const NavigationArea = styled.section`
     width: 60vw;
     display: flex;
     justify-content: space-between;
-    align-items:baseline;
+    align-items:center;
   }
 `
 
