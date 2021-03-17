@@ -61,7 +61,8 @@ module.exports = {
   new CleanWebpackPlugin(),
   new HtmlWebpackPlugin({
     title: 'Production',
-    template: './src/index.html'
+    template: './src/index.html',
+    favicon: "./client/images/favicon.ico"
   }),
 ],
   optimization: {
