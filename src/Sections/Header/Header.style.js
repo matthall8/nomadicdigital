@@ -26,7 +26,7 @@ export const StyledHeader = styled.header`
 export const LogoH1 = styled.h1`
   color: #fff;
   text-align: center;
-  padding: 10px 0px 0px 0px;
+  padding: 18px 0px 0px 0px;
   font-family: 'Muli', sans-serif;
   font-style: normal;
   font-weight: 700; 
@@ -41,7 +41,7 @@ export const LogoH1 = styled.h1`
 export const TaglineH2 = styled.h2`
   color: #fff;
   text-align: center;
-  padding: 65px 40px 0px;
+  padding: 48px 40px 0px 40px;
   font-size: 2.2rem;
   font-family: 'Muli', sans-serif;
   font-style: normal;
